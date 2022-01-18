@@ -26,17 +26,17 @@
         </Grid.RowDefinitions>
         
 
-        <TextBox HorizontalContentAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch"  FontSize="20" Background="WhiteSmoke" BorderThickness="2" Name="tb" Text="" Foreground="Black" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
+        <TextBox HorizontalContentAlignment="Right" TextWrapping="Wrap" VerticalAlignment="Stretch"  HorizontalAlignment="Stretch"  FontSize="20" Background="WhiteSmoke" BorderThickness="2" Name="textBox" Text="" Foreground="Black" Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="4">
         </TextBox>
-        <Button Content="7" x:Name="Num7" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="2" Grid.Column="0" Style="{DynamicResource RoundCorner}"/>
+        <Button Content="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="2" Grid.Column="0" Style="{DynamicResource RoundCorner}"/>
 
-        <Button Content="8" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="2" Grid.Column="1" Style="{DynamicResource RoundCorner}" >
+        <Button Content="2" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="2" Grid.Column="1" Style="{DynamicResource RoundCorner}" >
            
         </Button>
-        <Button  Content="9" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="2" Grid.Column="2" Style="{DynamicResource RoundCorner}">
+        <Button  Content="3" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="2" Grid.Column="2" Style="{DynamicResource RoundCorner}">
         
         </Button>
-        <Button Content="/"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="2" Grid.Column="3" Style="{DynamicResource orangeCorner}"/>
+        <Button Content="+"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="2" Grid.Column="3" Style="{DynamicResource orangeCorner}"/>
         <Button Content="4"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="3" Grid.Column="0" Style="{DynamicResource RoundCorner}">
         </Button>
         <Button Content="5"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="3" Grid.Column="1"  Style="{DynamicResource RoundCorner}">
@@ -44,26 +44,26 @@
         <Button  Content="6"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="3" Grid.Column="2"  Style="{DynamicResource RoundCorner}">
       
         </Button>
-        <Button Content="*"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="3" Grid.Column="3" Style="{DynamicResource orangeCorner}">
+        <Button Content="-"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="3" Grid.Column="3" Style="{DynamicResource orangeCorner}">
            
         </Button>
-        <Button Content="1"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="4" Grid.Column="0" Style="{DynamicResource RoundCorner}">
+        <Button Content="7"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="4" Grid.Column="0" Style="{DynamicResource RoundCorner}">
           
         </Button>
-        <Button Content="2"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="4" Grid.Column="1" Style="{DynamicResource RoundCorner}">
+        <Button Content="8"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="4" Grid.Column="1" Style="{DynamicResource RoundCorner}">
            
         </Button>
-        <Button Content="3"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="4" Grid.Column="2" Style="{DynamicResource RoundCorner}">
+        <Button Content="9"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="4" Grid.Column="2" Style="{DynamicResource RoundCorner}">
            
         </Button>
-        <Button Content="-"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="4" Grid.Column="3"  Style="{DynamicResource orangeCorner}">
+        <Button Content="*"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="4" Grid.Column="3"  Style="{DynamicResource orangeCorner}">
           
         </Button>
         <Button Content="0"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="5" Grid.Column="1" Style="{DynamicResource RoundCorner}">
           
         </Button>
         <Button Content="="  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Result_click" Grid.Row="5" Grid.Column="2" Grid.ColumnSpan="2" Style="{DynamicResource orangeCorner}"/>
-        <Button Content="+"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="5" Grid.Column="0"  Style="{DynamicResource orangeCorner}">
+        <Button Content="/"  HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Button_Click_1" Grid.Row="5" Grid.Column="0"  Style="{DynamicResource orangeCorner}">
            
         </Button>
         <Button Content="Off" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" FontSize="18" Click="Off_Click_1" Grid.Row="1" Grid.Column="2" Grid.ColumnSpan="2"  Style="{DynamicResource orangeCorner}" >

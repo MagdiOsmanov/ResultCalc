@@ -32,65 +32,70 @@ namespace Test
         }
         private void Button_Click_1(object sender, RoutedEventArgs e)
         {
-            Button b = (Button)sender;
-            tb.Text += b.Content.ToString();
+            Button button = (Button)sender;
+            textBox.Text += button.Content.ToString();
         }
 
         private void Result_click(object sender, RoutedEventArgs e)
         {
             try
             {
-                result();
+                Result();
             }
             catch (Exception)
             {
-                tb.Text = "Ошибка";
+                textBox.Text = "Ошибка";
             }
         }
 
-        private void result()
+        private void Result()
         {
-            string op;
-            int iOp = 0;
-            if (tb.Text.Contains("+"))
+            //Обравботка символов
+
+            string res;
+            int result = 0;
+            if (textBox.Text.Contains("+"))
             {
-                iOp = tb.Text.IndexOf("+");
+                result = textBox.Text.IndexOf("+");
             }
-            else if (tb.Text.Contains("-"))
+            else if (textBox.Text.Contains("-"))
             {
-                iOp = tb.Text.IndexOf("-");
+                result = textBox.Text.IndexOf("-");
             }
-            else if (tb.Text.Contains("*"))
+            else if (textBox.Text.Contains("*"))
             {
-                iOp = tb.Text.IndexOf("*");
+                result = textBox.Text.IndexOf("*");
             }
-            else if (tb.Text.Contains("/"))
+            else if (textBox.Text.Contains("/"))
             {
-                iOp = tb.Text.IndexOf("/");
+                result = textBox.Text.IndexOf("/");
             }
           
 
-            op = tb.Text.Substring(iOp, 1);
-            double op1 = Convert.ToDouble(tb.Text.Substring(0, iOp));
-            double op2 = Convert.ToDouble(tb.Text.Substring(iOp + 1, tb.Text.Length - iOp - 1));
+            //Арифметическая обработка
 
-            if (op == "+")
+            res = textBox.Text.Substring(result, 1);
+            double x = Convert.ToDouble(textBox.Text.Substring(0, result));
+            double y = Convert.ToDouble(textBox.Text.Substring(result + 1, textBox.Text.Length - result - 1));
+
+            if (res == "+")
             {
-                tb.Text = Convert.ToString(op1 + op2);
+                textBox.Text = Convert.ToString(x + y);
             }
-            else if (op == "-")
+            else if (res == "-")
             {
-                tb.Text = Convert.ToString(op1 - op2);
+                textBox.Text = Convert.ToString(x - y);
             }
-            else if (op == "*")
+            else if (res == "*")
             {
-                tb.Text = Convert.ToString(op1 * op2);
+                textBox.Text = Convert.ToString(x * y);
             }
             else
             {
-                tb.Text = Convert.ToString(op1 / op2);
+                textBox.Text = Convert.ToString(x / y);
             }
         }
+        //Настройка функций кнопок
 
         private void Off_Click_1(object sender, RoutedEventArgs e)
         {
@@ -99,14 +104,14 @@ namespace Test
 
         private void CE_Click(object sender, RoutedEventArgs e)
         {
-            tb.Clear();
+            textBox.Clear();
         }
 
         private void C_Click(object sender, RoutedEventArgs e)
         {
-            if (tb.Text.Length > 0)
+            if (textBox.Text.Length > 0)
             {
-                tb.Text = tb.Text.Substring(0, tb.Text.Length - 1);
+                textBox.Text = textBox.Text.Substring(0, textBox.Text.Length - 1);
             }
         }
     }
